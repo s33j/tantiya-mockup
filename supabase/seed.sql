@@ -111,3 +111,52 @@ join sample_markets s on s.slug = m.slug
 cross join lateral jsonb_array_elements(s.outcomes) with ordinality as o(value, ord);
 
 drop table sample_markets;
+
+-- Sample Community members and posts (added 27 Nov 2026; approved by Dev 2 for
+-- the Dec 1 demo, local only). The members cannot sign in (no password).
+-- Approving them pays their starting coins through the ledger as usual.
+insert into auth.users (
+  id, instance_id, aud, role, email, encrypted_password, email_confirmed_at,
+  raw_app_meta_data, raw_user_meta_data, created_at, updated_at,
+  confirmation_token, recovery_token, email_change_token_new, email_change
+)
+select id::uuid, '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', email, '', now(),
+  '{"provider":"email","providers":["email"]}', '{}', now(), now(), '', '', '', ''
+from (values
+  ('00000000-0000-4000-8000-00000000c001', 'sample-rina@example.test'),
+  ('00000000-0000-4000-8000-00000000c002', 'sample-paolo@example.test'),
+  ('00000000-0000-4000-8000-00000000c003', 'sample-joy@example.test')
+) as u (id, email);
+
+update public.profiles p
+set status = 'approved', display_name = v.name
+from (values
+  ('00000000-0000-4000-8000-00000000c001'::uuid, '[SAMPLE] Rina D.'),
+  ('00000000-0000-4000-8000-00000000c002'::uuid, '[SAMPLE] Paolo M.'),
+  ('00000000-0000-4000-8000-00000000c003'::uuid, '[SAMPLE] Joy C.')
+) as v (id, name)
+where p.id = v.id;
+
+insert into public.posts (author_id, body, market_id, created_at)
+select a::uuid, body, (select id from public.markets where slug = m), now() - ago::interval
+from (values
+  ('00000000-0000-4000-8000-00000000c001', 'sample-bsp-rate-cut',
+   '[SAMPLE] The BSP statement usually comes out mid-afternoon on decision day, after this market closes, so nobody gets a late-information edge. My read: one more 25 bp cut, then a pause.', '2 hours'),
+  ('00000000-0000-4000-8000-00000000c002', 'sample-inflation-over-under',
+   '[SAMPLE] Core inflation eased three months running in my notes. Leaning Under, but rice and LPG are the wild cards. Source: PSA release, Table 1.', '5 hours'),
+  ('00000000-0000-4000-8000-00000000c003', null,
+   '[SAMPLE] Tip for new members: read "How this resolves" on each market before betting. The source and close time matter more than the headline.', '1 day')
+) as v (a, m, body, ago);
+
+insert into public.post_comments (post_id, author_id, body, created_at)
+select (select id from public.posts where body like '[SAMPLE] The BSP statement%'), a::uuid, body, now() - ago::interval
+from (values
+  ('00000000-0000-4000-8000-00000000c002', '[SAMPLE] Agree on the timing. The 50 bp case looks unlikely to me.', '1 hour'),
+  ('00000000-0000-4000-8000-00000000c003', '[SAMPLE] Worth checking the last meeting''s highlights for dissents.', '30 minutes')
+) as v (a, body, ago);
+
+insert into public.post_likes (post_id, user_id)
+select p.id, u.id
+from public.posts p
+cross join (values ('00000000-0000-4000-8000-00000000c002'::uuid), ('00000000-0000-4000-8000-00000000c003'::uuid)) as u (id)
+where p.body like '[SAMPLE] The BSP statement%' and p.author_id <> u.id;
