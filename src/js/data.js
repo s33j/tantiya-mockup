@@ -24,7 +24,7 @@ function makeData() {
     {
       id: 'cpi-nov', tpl: 'cpi', kind: 'ou', source: 'PSA consumer price index release',
       title: 'PSA November inflation: over or under 3.5%?',
-      rules: 'Over if the headline inflation rate for November 2026 in the PSA release is above 3.5%. A half-point line, so no push is possible.',
+      rules: 'Over if the headline inflation rate for November 2026 in the PSA release is above 3.5%. PSA reports one decimal, so exactly 3.5% would be a push (stakes returned); half-point lines vs pushes is an open decision.',
       hist: [49, 50, 50, 51, 50, 50, 50],
       questions: [
         q('cpi-nov-main', 'November headline inflation, line 3.5%', [-110, -110], { main: true, labels: ['Over', 'Under'], close: '2026-12-03T23:59:00+08:00', answerAt: 'Dec 4, 9:00 AM (PSA release)', pool: 22600, bettors: 188, staked: [11900, 10700] }),

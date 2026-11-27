@@ -2,7 +2,7 @@
 const DECISIONS = [
   { g: 'Odds and lines (from the Nov 27 brief)', items: [
     ['Margin size', 'How much house margin is built into each line.', '6.03, 6.05'],
-    ['Half-point lines vs pushes', 'Use half-point lines (3.5%) so there is never a push, or allow whole lines and return stakes on a push.', '2.04, 2.09, 6.05'],
+    ['Half-point lines vs pushes', 'PSA and BSP figures are published to one or two decimals, so a line like 3.5% can be hit exactly. Either set lines between reported values (e.g. 3.45%) so there is never a push, or allow it and return stakes on a push.', '2.04, 2.09, 6.05'],
     ['Max stake per bet', 'Upper limit for a single bet. Also how it relates to the user’s own daily stake limit.', '2.05, 5.01, 6.03'],
     ['Line-move rule', 'How far and how often lines move as bets come in, and whether any move or only a threshold shows "Line moved".', '2.06, 6.03'],
     ['Opening-line data source per template', 'Which feed sets the opening line for fuel, PSA inflation, BSP rate, PHP/USD and PAGASA markets.', '6.05'],
