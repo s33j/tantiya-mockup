@@ -1,0 +1,65 @@
+/*
+ * Tantiya design tokens (Tailwind v4).
+ * Sources: POC proposal "Branding" section and the Core Screen Mockups
+ * (https://claude.ai/artifact/JTbb52u16tSony2VgoH6od).
+ * Dark is the default theme. The light theme is not designed yet.
+ */
+
+@theme {
+  /* Base */
+  --color-bg: #0f1b2d;
+  --color-surface: #16263d;
+  --color-surface-sunken: #0b1626;
+  --color-border: #24364f;
+  --color-border-strong: #3a4e6b;
+  --color-paper: #f7f7f4; /* light theme base */
+
+  /* Text */
+  --color-text: #e8edf3;
+  --color-text-secondary: #c5d0dc;
+  --color-text-muted: #9aa8ba;
+
+  /* Accent: actions. Fills use accent; links and active nav text use accent-text. */
+  --color-accent: #14b8a6;
+  --color-accent-text: #2dd4bf;
+
+  /* Outcomes: always paired with a text label */
+  --color-yes: #60a5fa;
+  --color-yes-text: #93c5fd;
+  --color-no: #fb923c;
+  --color-no-text: #fdba74;
+
+  /* Status: always paired with an icon. */
+  --color-open: #34d399;
+  --color-open-text: #6ee7b7;
+  --color-closing: #fbbf24;
+  --color-closing-text: #fcd34d;
+  --color-closed: #94a3b8;
+  --color-closed-text: #cbd5e1;
+
+  /* Type: IBM Plex Sans, scale 12 / 14 / 16 / 20 / 28 */
+  --font-sans: var(--font-plex-sans), system-ui, sans-serif;
+  --text-*: initial;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+
+  /* Corners (spacing uses Tailwind's default 4px grid) */
+  --radius-card: 12px;
+  --radius-input: 8px;
+
+  /* Motion: 200 ms ease on number changes, nothing over 400 ms */
+  --default-transition-duration: 200ms;
+  --default-transition-timing-function: ease;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-variant-numeric: tabular-nums;
+  }
+}

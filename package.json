@@ -1,10 +1,21 @@
 {
-  "name": "tantiya-mockup",
-  "version": "1.0.0",
+  "name": "tantiya",
   "private": true,
-  "description": "Clickable mockup of the Tantiya app flow (Dec 1, 2026 review). No backend, sample data.",
-  "type": "module",
+  "packageManager": "pnpm@11.5.2",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
-    "build": "node build.mjs"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "check-types": "turbo run check-types",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10",
+    "supabase": "^2.121.0",
+    "turbo": "^2.11.9"
   }
 }

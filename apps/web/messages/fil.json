@@ -1,0 +1,302 @@
+{
+  "Metadata": {
+    "description": "Libreng pagtataya gamit ang play money sa pampublikong datos ng Pilipinas."
+  },
+  "Shell": {
+    "skipToContent": "Lumaktaw sa nilalaman"
+  },
+  "Nav": {
+    "label": "Pangunahin",
+    "markets": "Mga merkado",
+    "watchlist": "Binabantayan",
+    "bets": "Aking taya",
+    "wallet": "Wallet",
+    "account": "Account"
+  },
+  "LanguageSwitcher": {
+    "label": "Wika"
+  },
+  "Footer": {
+    "saferPlay": "21+ lamang · Nakakaadik ang pagsusugal. Alamin kung kailan titigil.",
+    "helpline": "Helpline: [HELPLINE NUMBER]"
+  },
+  "Markets": {
+    "title": "Mga merkado",
+    "subtitle": "{count, plural, one {# open} other {# open}} · all times PHT · American lines, house margin included",
+    "closingSoon": "Closing soon",
+    "allTimesPht": "All times PHT",
+    "categories": "Categories",
+    "all": "All",
+    "closes": "Closes {date}",
+    "source": "Source: {source}",
+    "empty": "No open markets in this category.",
+    "table": {
+      "market": "Market",
+      "category": "Category",
+      "lines": "Lines",
+      "closes": "Closes"
+    },
+    "wins100": "100 wins {amount}"
+  },
+  "Auth": {
+    "signUpTitle": "Gumawa ng account",
+    "signInTitle": "Mag-sign in",
+    "forgotPasswordTitle": "Nakalimutan ang password?",
+    "resetPasswordTitle": "Magtakda ng bagong password",
+    "accountTitle": "Account",
+    "email": "Email",
+    "password": "Password",
+    "newPassword": "Bagong password",
+    "declared21Plus": "Ako ay 21 taong gulang o higit pa.",
+    "declaredInPh": "Ako ay nasa Pilipinas.",
+    "signUp": "Mag-sign up",
+    "signIn": "Mag-sign in",
+    "signOut": "Mag-sign out",
+    "haveAccount": "May account ka na?",
+    "noAccount": "Bago sa Tantiya?",
+    "forgotPassword": "Nakalimutan ang password?",
+    "backToSignIn": "Bumalik sa pag-sign in",
+    "sendResetLink": "Ipadala ang reset link",
+    "savePassword": "I-save ang password",
+    "checkEmail": "Tingnan ang {email} para sa link na magve-verify ng iyong account. Kung may account ka na, mag-sign in na lang.",
+    "resendVerification": "Ipadala muli ang verification email",
+    "verificationSent": "Kung kailangan pang i-verify ang email na ito, may bagong link na ipinapadala.",
+    "resetEmailSent": "Kung may account ang email na iyon, may reset link na ipinapadala. Mag-e-expire ito pagkalipas ng isang oras.",
+    "accountStatus": "Status ng account",
+    "status": {
+      "under_review": "Sinusuri",
+      "approved": "Aprubado",
+      "rejected": "Tinanggihan",
+      "closed": "Sarado"
+    },
+    "errors": {
+      "emailInvalid": "Maglagay ng wastong email address.",
+      "passwordTooShort": "Gumamit ng hindi bababa sa 8 character.",
+      "passwordRequired": "Ilagay ang iyong password.",
+      "declared21PlusRequired": "Kailangan 21 taong gulang o higit pa para sumali.",
+      "declaredInPhRequired": "Kailangan nasa Pilipinas ka para sumali.",
+      "invalidCredentials": "Mali ang email o password.",
+      "emailNotConfirmed": "I-verify muna ang iyong email bago mag-sign in. Tingnan ang link sa iyong inbox.",
+      "weakPassword": "Pumili ng mas malakas na password.",
+      "samePassword": "Pumili ng password na iba sa kasalukuyan.",
+      "rateLimited": "Masyadong maraming pagsubok. Maghintay ng ilang minuto at subukan muli.",
+      "linkInvalid": "Nag-expire na o nagamit na ang email link na iyon. Humiling ng bago.",
+      "generic": "May nangyaring mali. Pakisubukan muli."
+    }
+  },
+  "Kyc": {
+    "steps": {
+      "label": "Hakbang {current} sa {total}",
+      "account": "Account",
+      "identity": "Pagkakakilanlan",
+      "review": "Pagsusuri"
+    },
+    "providerInEnglish": "Nasa English ang mga hakbang sa page ng Didit.",
+    "browseMarkets": "Tingnan ang mga merkado",
+    "browseMarketsMeanwhile": "Tingnan muna ang mga merkado",
+    "accountStatus": {
+      "notSubmitted": "Hindi pa naipapasa",
+      "inProgress": "Isinasagawa ang ID check",
+      "notApproved": "Hindi naaprubahan"
+    },
+    "verify": {
+      "title": "I-verify ang iyong pagkakakilanlan",
+      "intro": "Para sa mga 21 taong gulang pataas na nasa Pilipinas ang Tantiya, isang account bawat tao. Kinukumpirma ito ng maikling pagsusuri ng ID.",
+      "needTitle": "Kakailanganin mo",
+      "needId": "Isang valid na ID: PhilID o ePhilID, pasaporte, lisensya sa pagmamaneho o UMID",
+      "needSelfie": "Isang selfie at maikling liveness check",
+      "needLight": "Maliwanag na lugar at camera ng iyong telepono",
+      "dataTitle": "Paano hinahawakan ang iyong datos",
+      "dataProvider": "Ang Didit, ang aming verification provider, ang kumukuha at sumusuri ng mga larawan. Ang resulta lang ang itinatago ng Tantiya, hindi ang mga larawan ng iyong ID.",
+      "dataMinimal": "ID, selfie at liveness check lang ang kinokolekta namin. Walang address o kita.",
+      "start": "Simulan ang pag-verify",
+      "continueNote": "Magpapatuloy ka sa secure na page ng Didit, saka babalik dito.",
+      "browseFirst": "Tingnan muna ang mga merkado"
+    },
+    "underReview": {
+      "title": "Sinusuri",
+      "body": "May staff na sumusuri sa bawat aplikasyon.",
+      "stepAccount": "Nagawa ang account",
+      "stepSubmitted": "Naipasa ang ID check",
+      "stepReview": "Pagsusuri ng staff",
+      "reviewTime": "Karaniwang sa loob ng 24 oras",
+      "grantNote": "Matatanggap mo ang {coins, number} panimulang coin kapag naaprubahan ka."
+    },
+    "notFinished": {
+      "title": "Hindi pa tapos ang ID check",
+      "body": "Hindi masusuri ang iyong aplikasyon hangga't hindi mo natatapos ang ID check.",
+      "continue": "Ituloy ang pag-verify"
+    },
+    "full": {
+      "title": "Puno na ang mga aplikasyon ngayong buwan",
+      "body": "Limitado ang bilang ng ID na nasusuri namin bawat buwan. Maaari kang mag-apply simula <nowrap>{date}</nowrap>.",
+      "reopens": "Muling magbubukas ang aplikasyon",
+      "saved": "Naka-save ang iyong account, kaya hindi mo na kailangang mag-sign up muli."
+    },
+    "notApproved": {
+      "title": "Hindi namin naaprubahan ang iyong aplikasyon",
+      "reasonLabel": "Dahilan",
+      "actionLabel": "Ang maaari mong gawin",
+      "applyAgain": "Mag-apply muli",
+      "applyAgainNote": "Bagong ID check ito sa page ng Didit, na nasa English.",
+      "support": "May tanong? Mag-email sa <email>{address}</email>.",
+      "supportEmail": "[SUPPORT EMAIL]",
+      "reasons": {
+        "id_unreadable": "Hindi namin mabasa ang iyong ID. Malabo o putol ang larawan.",
+        "id_expired": "Expired na ang iyong ID.",
+        "id_type_not_accepted": "Hindi namin tinatanggap ang ganitong uri ng ID.",
+        "face_mismatch": "Hindi tugma ang iyong selfie sa larawan sa iyong ID.",
+        "liveness_failed": "Hindi pumasa ang liveness check.",
+        "under_21": "Para lang sa mga 21 taong gulang pataas ang Tantiya.",
+        "outside_ph": "Para lang sa mga nasa Pilipinas ang Tantiya.",
+        "duplicate_person": "May Tantiya account na ang taong ito. Isang account lang bawat tao.",
+        "document_suspect": "Hindi namin makumpirma na tunay ang iyong ID.",
+        "other": "Hindi namin makumpirma ang iyong mga detalye."
+      },
+      "actions": {
+        "id_unreadable": "Ulitin ang ID check nang buo ang ID sa larawan at maliwanag ang lugar.",
+        "id_expired": "Mag-apply muli gamit ang ID na may bisa pa.",
+        "id_type_not_accepted": "Mag-apply muli gamit ang PhilID o ePhilID, pasaporte, lisensya sa pagmamaneho o UMID.",
+        "face_mismatch": "Ulitin ang ID check nang malinaw ang iyong mukha at maliwanag ang lugar.",
+        "liveness_failed": "Ulitin ang ID check at sundin ang mga hakbang sa screen, sa maliwanag na lugar.",
+        "other": "Ulitin ang ID check. Kung mangyari ulit, mag-email sa amin."
+      }
+    },
+    "approved": {
+      "title": "Aprubado na ang iyong account",
+      "body": "Nasuri na ng aming staff ang iyong aplikasyon. Maaari ka nang gumawa ng pagtataya.",
+      "grantLabel": "Panimulang coin",
+      "coins": "coin",
+      "grantAdded": "Idinagdag noong {date} · Panimulang bigay",
+      "playMoney": "Play money ito: hindi nabibili, napapalitan ng pera, o naipagpapalit ang mga coin."
+    },
+    "receiving": {
+      "title": "Tinatanggap ang resulta",
+      "body": "Tinatanggap pa namin ang iyong beripikasyon. Mag-a-update ang pahinang ito sa ilang sandali.",
+      "leave": "Maaari mong iwan ang pahinang ito at bumalik dito mamaya."
+    },
+    "declarations": {
+      "title": "Kumpirmahin muna ang dalawang bagay",
+      "body": "Kailangan namin ang dalawa bago magsimula ang ID check.",
+      "submit": "Magpatuloy sa ID check"
+    },
+    "startError": {
+      "title": "Hindi namin masimulan ang ID check",
+      "body": "May nangyaring mali. Subukang muli pagkalipas ng ilang minuto.",
+      "saved": "Naka-save ang iyong account at mga sagot.",
+      "retry": "Subukang muli"
+    }
+  },
+  "Market": {
+    "back": "All markets",
+    "open": "Open",
+    "closesLine": "{category} · closes {date} PHT",
+    "howResolves": "How this resolves",
+    "source": "Source: {source}",
+    "favourite": "Llamado",
+    "underdog": "Dehado"
+  },
+  "BetSlip": {
+    "title": "Bet slip",
+    "close": "Close bet slip",
+    "pick": "Pick an outcome to start.",
+    "stake": "Stake",
+    "amount": "Amount",
+    "coins": "coins",
+    "add": "+ {amount}",
+    "toWin": "To win",
+    "totalReturn": "Total return",
+    "odds": "Odds",
+    "closes": "Closes",
+    "closesAt": "Main line · closes {date}",
+    "wins100": "100 wins {amount}",
+    "openedAt": "Opened at {lines} · lines move automatically as bets come in",
+    "balanceAfter": "Balance after bet",
+    "fixedNote": "Odds, To win and Total return are fixed when you place the bet. No fee: the house margin is in the line.",
+    "place": "Place {stake} on {label}",
+    "placing": "Placing…",
+    "enterStake": "Enter a stake",
+    "wholeCoins": "Enter a whole number of coins.",
+    "tooMuch": "Not enough coins",
+    "signIn": "Sign in to bet",
+    "notApproved": "You can bet once your account is approved.",
+    "checkAccount": "Check your account",
+    "movedTitle": "Line moved",
+    "movedBody": "The line for {label} changed before your bet went in. Nothing has been staked yet.",
+    "movedStake": "Stake {stake} coins.",
+    "before": "Before",
+    "now": "Now",
+    "accept": "Accept new odds",
+    "cancel": "Cancel",
+    "placedTitle": "Bet placed",
+    "yourPick": "Your pick",
+    "placedNote": "These terms are fixed. Lines move automatically as bets come in.",
+    "viewBets": "View My bets",
+    "another": "Place another bet",
+    "errors": {
+      "not_signed_in": "Sign in to bet.",
+      "not_approved": "You can bet once your account is approved.",
+      "excluded": "Betting is paused on your account (break or self-exclusion).",
+      "invalid_stake": "Enter a stake of at least 1 coin.",
+      "outcome_not_found": "This outcome no longer exists. Reload the page.",
+      "market_closed": "This market is closed to new bets.",
+      "not_two_outcomes": "This market can't take bets.",
+      "stake_limit": "This bet would go over your stake limit.",
+      "stake_too_small": "Stake more to win at least 1 coin at this line.",
+      "insufficient_coins": "Not enough coins.",
+      "generic": "Something went wrong. Try again."
+    }
+  },
+  "Bets": {
+    "title": "My bets",
+    "sections": "My bets sections",
+    "open": "Open ({count})",
+    "settled": "Settled",
+    "empty": "No open bets yet.",
+    "browse": "Browse markets",
+    "settledNote": "Settled bets appear here after each result.",
+    "stake": "Stake",
+    "toWin": "To win",
+    "totalReturn": "Total return",
+    "placed": "Placed {date}",
+    "closes": "closes {date}",
+    "signIn": "Sign in to see your bets.",
+    "signInLink": "Sign in",
+    "notApproved": "You can bet once your account is approved."
+  },
+  "Wallet": {
+    "title": "Wallet",
+    "simulation": "Simulation — no money is charged.",
+    "available": "Available to bet or withdraw",
+    "inPlay": "In play",
+    "pending": "Pending withdrawal",
+    "coins": "coins",
+    "topUp": "Top up",
+    "withdraw": "Withdraw",
+    "notYet": "Simulated top-up and withdraw are still being designed.",
+    "history": "History",
+    "kinds": {
+      "starting_grant": "Starting grant",
+      "top_up": "Simulated top-up",
+      "bet": "Bet",
+      "settlement": "Payout",
+      "void_refund": "Refund (voided market)",
+      "withdrawal_request": "Simulated withdrawal",
+      "withdrawal_paid": "Simulated withdrawal paid",
+      "withdrawal_rejected": "Simulated withdrawal returned"
+    },
+    "empty": "No activity yet.",
+    "signIn": "Sign in to see your wallet.",
+    "signInLink": "Sign in",
+    "notApproved": "Your wallet opens when your account is approved."
+  },
+  "Watchlist": {
+    "title": "Watchlist",
+    "add": "Add to watchlist",
+    "remove": "Remove from watchlist",
+    "column": "Watch",
+    "empty": "No markets on your watchlist yet. Tap the star on a market to add it.",
+    "browse": "Browse markets",
+    "demoNote": "Demo: your watchlist is saved in this browser only."
+  }
+}

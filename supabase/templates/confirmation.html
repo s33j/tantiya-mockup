@@ -1,0 +1,26 @@
+<!-- Link format: see "Auth email" in the README. -->
+{{ if eq .Data.locale "fil" }}
+<h2>I-verify ang iyong email</h2>
+<p>Pindutin ang link para i-verify ang iyong Tantiya account.</p>
+<p>
+  <a
+    href="{{ .SiteURL }}/api/auth/confirm?token_hash={{ .TokenHash }}&type=email&next=/fil/account"
+    >I-verify ang email</a
+  >
+</p>
+<p>Mag-e-expire ang link pagkalipas ng isang oras.</p>
+<p>
+  Kung hindi ikaw ang gumawa ng account na ito, balewalain ang email na ito.
+</p>
+{{ else }}
+<h2>Verify your email</h2>
+<p>Follow the link to verify your Tantiya account.</p>
+<p>
+  <a
+    href="{{ .SiteURL }}/api/auth/confirm?token_hash={{ .TokenHash }}&type=email&next=/en/account"
+    >Verify email</a
+  >
+</p>
+<p>The link expires in one hour.</p>
+<p>If you didn't create this account, you can ignore this email.</p>
+{{ end }}

@@ -1,0 +1,10 @@
+{
+  "name": "tantiya-mockup",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Clickable mockup of the Tantiya app flow (Dec 1, 2026 review). No backend, sample data.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "Metadata": {
+    "description": "Free play-money forecasts on Philippine public data."
+  },
+  "Shell": {
+    "skipToContent": "Skip to content"
+  },
+  "Nav": {
+    "label": "Main",
+    "markets": "Markets",
+    "watchlist": "Watchlist",
+    "bets": "My bets",
+    "wallet": "Wallet",
+    "account": "Account"
+  },
+  "LanguageSwitcher": {
+    "label": "Language"
+  },
+  "Footer": {
+    "saferPlay": "21+ only · Gambling is addictive. Know when to stop.",
+    "helpline": "Helpline: [HELPLINE NUMBER]"
+  },
+  "Markets": {
+    "title": "Markets",
+    "subtitle": "{count, plural, one {# open} other {# open}} · all times PHT · American lines, house margin included",
+    "closingSoon": "Closing soon",
+    "allTimesPht": "All times PHT",
+    "categories": "Categories",
+    "all": "All",
+    "closes": "Closes {date}",
+    "source": "Source: {source}",
+    "empty": "No open markets in this category.",
+    "table": {
+      "market": "Market",
+      "category": "Category",
+      "lines": "Lines",
+      "closes": "Closes"
+    },
+    "wins100": "100 wins {amount}"
+  },
+  "Auth": {
+    "signUpTitle": "Create your account",
+    "signInTitle": "Sign in",
+    "forgotPasswordTitle": "Forgot your password?",
+    "resetPasswordTitle": "Set a new password",
+    "accountTitle": "Account",
+    "email": "Email",
+    "password": "Password",
+    "newPassword": "New password",
+    "declared21Plus": "I am 21 or older.",
+    "declaredInPh": "I am in the Philippines.",
+    "signUp": "Sign up",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "haveAccount": "Already have an account?",
+    "noAccount": "New to Tantiya?",
+    "forgotPassword": "Forgot password?",
+    "backToSignIn": "Back to sign in",
+    "sendResetLink": "Send reset link",
+    "savePassword": "Save password",
+    "checkEmail": "Check {email} for a link to verify your account. If you already have an account, sign in instead.",
+    "resendVerification": "Resend verification email",
+    "verificationSent": "If this email still needs verifying, a new link is on its way.",
+    "resetEmailSent": "If that email has an account, a reset link is on its way. It expires in one hour.",
+    "accountStatus": "Account status",
+    "status": {
+      "under_review": "Under review",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "closed": "Closed"
+    },
+    "errors": {
+      "emailInvalid": "Enter a valid email address.",
+      "passwordTooShort": "Use at least 8 characters.",
+      "passwordRequired": "Enter your password.",
+      "declared21PlusRequired": "You must be 21 or older to join.",
+      "declaredInPhRequired": "You must be in the Philippines to join.",
+      "invalidCredentials": "That email or password is wrong.",
+      "emailNotConfirmed": "Verify your email before signing in. Check your inbox for the link.",
+      "weakPassword": "Choose a stronger password.",
+      "samePassword": "Choose a password different from your current one.",
+      "rateLimited": "Too many attempts. Wait a few minutes and try again.",
+      "linkInvalid": "That email link has expired or was already used. Request a new one.",
+      "generic": "Something went wrong. Please try again."
+    }
+  },
+  "Kyc": {
+    "steps": {
+      "label": "Step {current} of {total}",
+      "account": "Account",
+      "identity": "Identity",
+      "review": "Review"
+    },
+    "providerInEnglish": "Didit's steps are in English.",
+    "browseMarkets": "Browse markets",
+    "browseMarketsMeanwhile": "Browse markets meanwhile",
+    "accountStatus": {
+      "notSubmitted": "Not yet submitted",
+      "inProgress": "ID check in progress",
+      "notApproved": "Not approved"
+    },
+    "verify": {
+      "title": "Verify your identity",
+      "intro": "Tantiya is for adults 21 and over in the Philippines, one account per person. A short ID check confirms both.",
+      "needTitle": "You'll need",
+      "needId": "A valid ID: PhilID or ePhilID, passport, driver's license or UMID",
+      "needSelfie": "A selfie and a short liveness check",
+      "needLight": "Good light and your phone's camera",
+      "dataTitle": "How your data is handled",
+      "dataProvider": "Didit, our verification provider, takes the photos and checks them. Tantiya keeps the result, not your ID images.",
+      "dataMinimal": "We collect only your ID, selfie and liveness check. No address or income.",
+      "start": "Start verification",
+      "continueNote": "You'll continue on Didit's secure page, then come back here.",
+      "browseFirst": "Browse markets first"
+    },
+    "underReview": {
+      "title": "Under review",
+      "body": "A staff member reviews every application.",
+      "stepAccount": "Account created",
+      "stepSubmitted": "ID check submitted",
+      "stepReview": "Staff review",
+      "reviewTime": "Usually within 24 hours",
+      "grantNote": "Your starting {coins, number} coins arrive once you're approved."
+    },
+    "notFinished": {
+      "title": "ID check not finished",
+      "body": "Your application can't be reviewed until you finish the ID check.",
+      "continue": "Continue verification"
+    },
+    "full": {
+      "title": "Applications are full this month",
+      "body": "We can check only a limited number of IDs each month. You can apply from <nowrap>{date}</nowrap>.",
+      "reopens": "Applications reopen",
+      "saved": "Your account is saved, so you won't need to sign up again."
+    },
+    "notApproved": {
+      "title": "We couldn't approve your application",
+      "reasonLabel": "Reason",
+      "actionLabel": "What you can do",
+      "applyAgain": "Apply again",
+      "applyAgainNote": "This starts a new ID check on Didit's page, in English.",
+      "support": "Questions? Email <email>{address}</email>.",
+      "supportEmail": "[SUPPORT EMAIL]",
+      "reasons": {
+        "id_unreadable": "We couldn't read your ID. The photo was blurred or cut off.",
+        "id_expired": "Your ID had expired.",
+        "id_type_not_accepted": "We can't accept that type of ID.",
+        "face_mismatch": "Your selfie didn't match the photo on your ID.",
+        "liveness_failed": "The liveness check didn't pass.",
+        "under_21": "Tantiya is only for adults 21 and over.",
+        "outside_ph": "Tantiya is only for people in the Philippines.",
+        "duplicate_person": "This person already has a Tantiya account. Each person can have only one.",
+        "document_suspect": "We couldn't confirm that your ID is genuine.",
+        "other": "We couldn't confirm your details."
+      },
+      "actions": {
+        "id_unreadable": "Take the ID check again with the whole ID in frame, in good light.",
+        "id_expired": "Apply again with an ID that is still valid.",
+        "id_type_not_accepted": "Apply again with a PhilID or ePhilID, passport, driver's license or UMID.",
+        "face_mismatch": "Take the ID check again with your face clearly visible, in good light.",
+        "liveness_failed": "Take the ID check again and follow the steps on screen, in good light.",
+        "other": "Take the ID check again. If it happens again, email us."
+      }
+    },
+    "approved": {
+      "title": "Your account is approved",
+      "body": "A staff member reviewed your application. You can now make forecasts.",
+      "grantLabel": "Starting coins",
+      "coins": "coins",
+      "grantAdded": "Added {date} · Starting grant",
+      "playMoney": "Play money: coins can't be bought, cashed out or traded."
+    },
+    "receiving": {
+      "title": "Receiving your result",
+      "body": "We are still receiving your verification. This page will update in a moment.",
+      "leave": "You can leave this page and check back here later."
+    },
+    "declarations": {
+      "title": "Confirm two things first",
+      "body": "We need both before the ID check can start.",
+      "submit": "Continue to ID check"
+    },
+    "startError": {
+      "title": "We couldn't start the ID check",
+      "body": "Something went wrong. Try again in a few minutes.",
+      "saved": "Your account and answers are saved.",
+      "retry": "Try again"
+    }
+  },
+  "Market": {
+    "back": "All markets",
+    "open": "Open",
+    "closesLine": "{category} · closes {date} PHT",
+    "howResolves": "How this resolves",
+    "source": "Source: {source}",
+    "favourite": "Llamado",
+    "underdog": "Dehado"
+  },
+  "BetSlip": {
+    "title": "Bet slip",
+    "close": "Close bet slip",
+    "pick": "Pick an outcome to start.",
+    "stake": "Stake",
+    "amount": "Amount",
+    "coins": "coins",
+    "add": "+ {amount}",
+    "toWin": "To win",
+    "totalReturn": "Total return",
+    "odds": "Odds",
+    "closes": "Closes",
+    "closesAt": "Main line · closes {date}",
+    "wins100": "100 wins {amount}",
+    "openedAt": "Opened at {lines} · lines move automatically as bets come in",
+    "balanceAfter": "Balance after bet",
+    "fixedNote": "Odds, To win and Total return are fixed when you place the bet. No fee: the house margin is in the line.",
+    "place": "Place {stake} on {label}",
+    "placing": "Placing…",
+    "enterStake": "Enter a stake",
+    "wholeCoins": "Enter a whole number of coins.",
+    "tooMuch": "Not enough coins",
+    "signIn": "Sign in to bet",
+    "notApproved": "You can bet once your account is approved.",
+    "checkAccount": "Check your account",
+    "movedTitle": "Line moved",
+    "movedBody": "The line for {label} changed before your bet went in. Nothing has been staked yet.",
+    "movedStake": "Stake {stake} coins.",
+    "before": "Before",
+    "now": "Now",
+    "accept": "Accept new odds",
+    "cancel": "Cancel",
+    "placedTitle": "Bet placed",
+    "yourPick": "Your pick",
+    "placedNote": "These terms are fixed. Lines move automatically as bets come in.",
+    "viewBets": "View My bets",
+    "another": "Place another bet",
+    "errors": {
+      "not_signed_in": "Sign in to bet.",
+      "not_approved": "You can bet once your account is approved.",
+      "excluded": "Betting is paused on your account (break or self-exclusion).",
+      "invalid_stake": "Enter a stake of at least 1 coin.",
+      "outcome_not_found": "This outcome no longer exists. Reload the page.",
+      "market_closed": "This market is closed to new bets.",
+      "not_two_outcomes": "This market can't take bets.",
+      "stake_limit": "This bet would go over your stake limit.",
+      "stake_too_small": "Stake more to win at least 1 coin at this line.",
+      "insufficient_coins": "Not enough coins.",
+      "generic": "Something went wrong. Try again."
+    }
+  },
+  "Bets": {
+    "title": "My bets",
+    "sections": "My bets sections",
+    "open": "Open ({count})",
+    "settled": "Settled",
+    "empty": "No open bets yet.",
+    "browse": "Browse markets",
+    "settledNote": "Settled bets appear here after each result.",
+    "stake": "Stake",
+    "toWin": "To win",
+    "totalReturn": "Total return",
+    "placed": "Placed {date}",
+    "closes": "closes {date}",
+    "signIn": "Sign in to see your bets.",
+    "signInLink": "Sign in",
+    "notApproved": "You can bet once your account is approved."
+  },
+  "Wallet": {
+    "title": "Wallet",
+    "simulation": "Simulation — no money is charged.",
+    "available": "Available to bet or withdraw",
+    "inPlay": "In play",
+    "pending": "Pending withdrawal",
+    "coins": "coins",
+    "topUp": "Top up",
+    "withdraw": "Withdraw",
+    "notYet": "Simulated top-up and withdraw are still being designed.",
+    "history": "History",
+    "kinds": {
+      "starting_grant": "Starting grant",
+      "top_up": "Simulated top-up",
+      "bet": "Bet",
+      "settlement": "Payout",
+      "void_refund": "Refund (voided market)",
+      "withdrawal_request": "Simulated withdrawal",
+      "withdrawal_paid": "Simulated withdrawal paid",
+      "withdrawal_rejected": "Simulated withdrawal returned"
+    },
+    "empty": "No activity yet.",
+    "signIn": "Sign in to see your wallet.",
+    "signInLink": "Sign in",
+    "notApproved": "Your wallet opens when your account is approved."
+  },
+  "Watchlist": {
+    "title": "Watchlist",
+    "add": "Add to watchlist",
+    "remove": "Remove from watchlist",
+    "column": "Watch",
+    "empty": "No markets on your watchlist yet. Tap the star on a market to add it.",
+    "browse": "Browse markets",
+    "demoNote": "Demo: your watchlist is saved in this browser only."
+  }
+}

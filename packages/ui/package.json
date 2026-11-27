@@ -1,0 +1,20 @@
+{
+  "name": "@tantiya/ui",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./theme.css": "./src/theme.css",
+    "./fonts": "./src/fonts.ts",
+    "./query-provider": "./src/query-provider.tsx"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": "^5",
+    "next": "*",
+    "react": "^19"
+  },
+  "devDependencies": {
+    "@tanstack/react-query": "^5.104.4",
+    "@types/react": "^19.3.0",
+    "react": "19.3.0"
+  }
+}
