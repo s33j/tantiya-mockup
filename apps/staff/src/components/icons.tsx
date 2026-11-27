@@ -123,3 +123,9 @@ export const LogIcon = ({ size }: { size?: number }) => (
     <path d="M8 8h8M8 12h8M8 16h5" />
   </Icon>
 );
+
+export const FlagIcon = ({ size }: { size?: number }) => (
+  <Icon size={size}>
+    <path d="M5 21V4M5 4h11l-2 4 2 4H5" />
+  </Icon>
+);

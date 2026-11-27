@@ -60,7 +60,7 @@ export async function AppShell({ children }: { children: ReactNode }) {
         aria-label={t("Nav.label")}
         className="fixed inset-x-0 bottom-0 border-t border-border bg-surface-sunken pb-[env(safe-area-inset-bottom)] md:hidden"
       >
-        <ul className="grid grid-cols-5 px-1 pt-2 pb-2">
+        <ul className="grid grid-cols-6 px-1 pt-2 pb-2">
           {navItems.map((item) => (
             <li key={item.key}>
               <NavLink

@@ -6,6 +6,7 @@ export type StaffRole =
   | "market_builder"
   | "resolver"
   | "withdrawal_approver"
+  | "moderator"
   | "admin";
 
 const roleLabels: Record<StaffRole, string> = {
@@ -14,6 +15,7 @@ const roleLabels: Record<StaffRole, string> = {
   market_builder: "Market builder",
   resolver: "Resolver",
   withdrawal_approver: "Withdrawal approver",
+  moderator: "Moderator",
 };
 
 export function roleLabel(role: StaffRole) {

@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import { MarketDiscussion } from "@/components/community/market-discussion";
 import { MarketBetting } from "@/components/markets/market-betting";
 import { OpenPill } from "@/components/markets/market-ui";
 import { WatchButton } from "@/components/markets/watch-button";
@@ -12,7 +13,7 @@ import { formatPht } from "@/lib/markets/format";
 // Market page (Gantt Task 15, updated for American lines Nov 27, 2026): mockup
 // 2.03 (Yes/No) and 2.04 (over/under) on phones, two panes with the bet slip on
 // the right from md up. Leads with the current lines, then rules, source and
-// close time (proposal, Features > Markets). Pool, bettor count, side bets and
+// close time (proposal, Features > Markets), and the Community discussion. Pool, bettor count, side bets and
 // the line history chart are not in this slice.
 
 async function Header({
@@ -82,7 +83,11 @@ async function MarketDetail({ params }: { params: Promise<{ slug: string }> }) {
 
   return (
     <NextIntlClientProvider
-      messages={{ Market: messages.Market, BetSlip: messages.BetSlip }}
+      messages={{
+        Market: messages.Market,
+        BetSlip: messages.BetSlip,
+        Community: messages.Community,
+      }}
     >
       <MarketBetting
         market={market}
@@ -93,7 +98,12 @@ async function MarketDetail({ params }: { params: Promise<{ slug: string }> }) {
             userId={bettor.kind === "guest" ? null : bettor.userId}
           />
         }
-        details={<Rules market={market} />}
+        details={
+          <>
+            <Rules market={market} />
+            <MarketDiscussion slug={market.slug} />
+          </>
+        }
       />
     </NextIntlClientProvider>
   );

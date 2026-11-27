@@ -42,6 +42,15 @@ export const navItems: NavItem[] = [
     ),
   },
   {
+    key: "community",
+    href: "/community",
+    icon: (
+      <svg {...iconProps}>
+        <path d="M4 5h16v10H9l-5 4zM8 9h8M8 12h5" />
+      </svg>
+    ),
+  },
+  {
     key: "bets",
     href: "/bets",
     icon: (

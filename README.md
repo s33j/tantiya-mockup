@@ -269,6 +269,33 @@ To try it: `pnpm supabase db reset`, sign up and approve an account as in "Try i
 
 **Left out until there is data or a decision:** pool size, bettor count, side bets, the line history chart (bets are only readable by their owner, so totals need a database view or function); the odds-format toggle (the slip shows American, decimal and implied % side by side); settlement and the result breakdown; hold-to-place.
 
+## Community
+
+Posts, likes, comments, reports and a staff moderation queue (decided Nov 27, 2026; mockup flow 3). Database side: `supabase/migrations/20261127000300_community.sql`, tested in `supabase/tests/community.test.sql`.
+
+| Route                       | Screen                                                                                        |
+| --------------------------- | --------------------------------------------------------------------------------------------- |
+| `/community`                | Feed, Latest or Top (most liked)                                                              |
+| `/community/new`            | Composer: text up to 500 characters and an optional market card (`?market=<slug>` preselects) |
+| `/community/[id]`           | Post with comments                                                                            |
+| `/community/members/[id]`   | Simple profile: display name, month joined, posts; change your own display name               |
+| `/markets/[slug]`           | Discussion section: the latest posts about the market                                         |
+| Staff console `/moderation` | Reported posts: Hide or Keep                                                                  |
+
+**Who can do what:** any signed-in account reads (not guests). Approved accounts with a display name post, like and comment; a self-exclusion stops this, a cooling-off break doesn't. Anyone signed in can report someone else's post, once. Moderators (new staff role `moderator`) and admins hide or keep reported posts at two-step sign-in; both actions go to the audit log. A hidden post disappears for everyone but its author.
+
+**Display names** are chosen by the member (`public.set_display_name`: 2–40 characters, unique whatever the case). Other members see names through `public.member_profiles`, which shows only the name and join date of approved accounts. KYC names are never shown.
+
+**Forecast on a post:** when a post carries a market card and the author has an open bet in that market, the post shows the bet's side, saved at posting time. Never the stake or winnings.
+
+**Try it:** `pnpm supabase db reset` loads three `[SAMPLE]` members with posts, comments and likes (local only). Approve your account, open `/community/new` to choose a display name, then post. To moderate, give a staff account the role and sign in to the staff console:
+
+```sql
+insert into public.staff_members (user_id, role) values ('<staff user id>', 'moderator');
+```
+
+**Not built yet:** the share card image and a public share page (Share copies the post's link, which opens for signed-in members), comment reports, editing or deleting posts, rate limits, notifications. Community guidelines and who moderates are open decisions.
+
 ## CI
 
 GitHub Actions runs the format check, lint, type check and build on every PR and on `main`.
